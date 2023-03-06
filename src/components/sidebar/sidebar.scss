@@ -1,0 +1,34 @@
+.sidebar {
+  flex: 1.12;
+  border-right: 0.5px solid rgb(205, 205, 205);
+  min-height: 100vh;
+  background-color: #d9d9d9;
+
+  .top {
+    background-color: #c21717;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #d9dbd8;
+    }
+  }
+
+  hr {
+    // height: 0;
+    border: 0.5px solid black;
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
