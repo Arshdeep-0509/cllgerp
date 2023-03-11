@@ -7,6 +7,10 @@ import ImportContactsIcon from "@mui/icons-material/ImportContacts";
 import PaidIcon from "@mui/icons-material/Paid";
 import CollectionsIcon from "@mui/icons-material/Collections";
 import PhoneIcon from "@mui/icons-material/Phone";
+import StickyNote2Icon from "@mui/icons-material/StickyNote2";
+import InfoIcon from "@mui/icons-material/Info";
+import ViewListIcon from "@mui/icons-material/ViewList";
+import LogoutIcon from "@mui/icons-material/Logout";
 import { Link } from "react-router-dom";
 
 const Sidebar = () => {
@@ -20,83 +24,74 @@ const Sidebar = () => {
 
       <div className="center">
         <ul>
+          <p className="title">DASHBOARD</p>
           <li>
             <DashboardIcon className="icon" />
-            <span>
-              <Link>Dashboard</Link>
-            </span>
+            <span>Dashboard</span>
           </li>
+          <p className="title">ANNOUNCEMENT</p>
           <li>
             <CampaignIcon className="icon" />
-            <span>
-              <Link>Announcements</Link>
-            </span>
+            <span>Announcements</span>
           </li>
           <li>
             <AddIcon className="icon" />
-            <span>
-              <Link>Make Announcements</Link>
-            </span>
+            <span>Make Announcements</span>
           </li>
+          <p className="title">COURSES</p>
           <li>
             <ImportContactsIcon className="icon" />
-            <span>
-              <Link>Courses</Link>
-            </span>
+            <span>Courses</span>
           </li>
-
-          <PaidIcon className="icon" />
-          <span>
-            <Link>Fee Structure</Link>
-          </span>
 
           <li>
             <AddIcon className="icon" />
-            <span>
-              <Link>Create Admin</Link>
-            </span>
+            <span>Add Course</span>
           </li>
+
+          <li>
+            <PaidIcon className="icon" />
+            <span>Fee Structure</span>
+          </li>
+
           <li>
             <AddIcon className="icon" />
-            <span>
-              <Link>Add Course</Link>
-            </span>
+            <span>Create Admin</span>
+          </li>
+
+          <p className="title">MISCELLANOUS</p>
+          <li>
+            <CollectionsIcon className="icon" />
+            <span>Gallery</span>
           </li>
           <li>
-            <CollectionsIcon />
-            <span>
-              <Link>Gallery</Link>
-            </span>
+            <PhoneIcon className="icon" />
+            <span>Contact Us</span>
           </li>
           <li>
-            <PhoneIcon />
-            <span>
-              <Link>Contact Us</Link>
-            </span>
+            <StickyNote2Icon className="icon" />
+            <span>Prospectus</span>
           </li>
           <li>
-            <span>
-              <Link>Prospectus</Link>
-            </span>
+            <InfoIcon className="icon" />
+            <span>Abouts Us</span>
           </li>
           <li>
-            <span>
-              <Link>Abouts Us</Link>
-            </span>
+            <ViewListIcon className="icon" />
+            <span>Admission Forms</span>
           </li>
+          <p className="title"> LOG OUT</p>
           <li>
-            <span>
-              <Link>Admission Forms</Link>
-            </span>
-          </li>
-          <li>
-            <span>
-              <Link>Log Out</Link>
-            </span>
+            <LogoutIcon className="icon" />
+            <span>Log Out</span>
           </li>
         </ul>
       </div>
-      <div className="bottom">color options</div>
+      <div className="bottom">
+        <div className="colorOption"></div>
+        <div className="colorOption"></div>
+        {/* <div className="colorOption"></div> */}
+      </div>
     </div>
   );
 };
