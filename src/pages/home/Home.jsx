@@ -9,7 +9,9 @@ const Home = () => {
       <Sidebar />
       <div className="homeContainer">
         <Navbar />
-        homeContainer
+       <div className="widgets">
+        
+       </div>
       </div>
     </div>
   );
